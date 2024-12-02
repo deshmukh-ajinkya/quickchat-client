@@ -1,1 +1,1 @@
-# quickchat-client
+# QuickChat Client
