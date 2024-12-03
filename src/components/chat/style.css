@@ -1,0 +1,194 @@
+#chat-app-container {
+  padding: 12px;
+}
+
+#chat-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+#chat-logo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+#chat-logo-image {
+  width: 36px;
+  height: 36px;
+}
+
+#chat-logo h2 {
+  font-size: 24px; /* Adjusted font size for the chat header title */
+}
+
+#user-info {
+  display: flex;
+  gap: 8px;
+}
+
+#user-info p {
+  font-size: 14px; /* Adjusted font size for user details */
+}
+
+#user-avatar {
+  width: 24px;
+  height: 24px;
+}
+
+#main-content {
+  display: grid;
+  grid-template-columns: auto 9fr;
+  height: calc(100vh - 65px);
+}
+
+#navigation-panel {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+  place-content: center;
+}
+
+.nav-icon {
+  width: 24px;
+  height: 24px;
+}
+
+#content {
+  display: grid;
+  grid-template-columns: inherit;
+  gap: 12px;
+  padding-left: 12px;
+  padding-top: 12px;
+}
+
+#search-bar {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+#search-input {
+  padding-inline: 8px;
+  padding-block: 4px;
+  border: 1px solid #d6d6d6;
+  border-radius: 4px;
+  font-size: 14px; /* Adjusted font size for search input text */
+}
+
+#search-input::placeholder {
+  font-size: 12px; /* Adjusted font size for placeholder */
+}
+
+.search-icon {
+  width: 18px;
+  height: 18px;
+}
+
+#user {
+  width: 200px;
+}
+
+#user-list {
+  border: 1px solid #d6d6d6;
+  border-radius: 4px;
+  margin-top: 12px;
+  padding: 12px;
+  box-sizing: border-box;
+  height: calc(100% - 38px);
+}
+
+#user-list-data {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 8px;
+}
+
+#user-list-data-icon {
+  width: 24px;
+  height: 24px;
+}
+
+#user-list-data-name {
+  font-size: 14px; /* Adjusted font size for user list item names */
+}
+
+#chat {
+  height: 100%;
+  border: 1px solid #d6d6d6;
+  border-radius: 4px;
+}
+
+#chat-user,
+#chat-message,
+#chat-input {
+  padding-inline: 8px;
+  padding-block: 8px;
+}
+
+#chat-user {
+  display: flex;
+  gap: 8px;
+  font-size: 14px; /* Adjusted font size for chat user name */
+  align-items: center;
+  border-bottom: 1px solid #d6d6d6;
+}
+
+#chat-user-status {
+  background-color: #31f931;
+  width: 8px;
+  height: 8px;
+  border-radius: 24px;
+}
+
+#chat-user-icon {
+  width: 24px;
+  height: 24px;
+}
+
+#chat-message {
+  font-size: 14px; /* Adjusted font size for chat messages */
+}
+
+#chat-input {
+  position: absolute;
+  bottom: 16px;
+  width: inherit;
+}
+
+#chat-input-box {
+  width: calc(100vw - 310px);
+  padding-block: 4px;
+  padding-inline: 8px;
+  border-color: #d6d6d6;
+  border-style: groove;
+  border-radius: 4px;
+  font-size: 14px; /* Adjusted font size for chat input box text */
+}
+
+#chat-input-send-icon {
+  width: 24px;
+  position: absolute;
+  right: 14px;
+  top: 10px;
+}
+
+#search-input,
+#chat-input-box {
+  padding-inline: 8px;
+  padding-block: 4px;
+  border: 1px solid #d6d6d6;
+  border-radius: 4px;
+}
+
+#search-input:focus,
+#chat-input-box:focus {
+  border-color: #d6d6d6; /* Keep the same color when focused */
+  outline: none; /* Optional: removes the default outline */
+}
+
+#search-input::placeholder,
+#chat-input-box::placeholder {
+  font-size: 12px; /* Adjusted font size for placeholders */
+  line-height: normal; /* Ensures vertical alignment */
+}

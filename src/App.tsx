@@ -1,9 +1,11 @@
-import Login from "./components/auth/login";
+// import Login from "./components/auth";
+import Chat from "./components/chat";
 
 function App() {
   return (
     <>
-      <Login />
+      {/* <Login /> */}
+      <Chat />
     </>
   );
 }
