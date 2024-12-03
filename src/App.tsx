@@ -1,11 +1,9 @@
-// import Login from "./components/auth";
-import Chat from "./components/chat";
+import Authentication from "./components/auth";
 
 function App() {
   return (
     <>
-      {/* <Login /> */}
-      <Chat />
+      <Authentication />
     </>
   );
 }
