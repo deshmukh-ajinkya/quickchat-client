@@ -12,7 +12,14 @@ function Login() {
         </div>
         <div className="google-login">
           <img id="login-icon" src={Google} alt="google-signin" />
-          <p>Login with Google</p>
+          <p
+            onClick={() => {
+              window.location.reload();
+              localStorage.setItem("authtoken", "test");
+            }}
+          >
+            Login with Google
+          </p>
         </div>
       </div>
     </div>

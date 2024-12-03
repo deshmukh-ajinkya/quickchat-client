@@ -18,7 +18,7 @@ const AuthProvider = ({ children }: AuthProviderProps) => {
   const [isAuthenticated, setIsAuthenticated] = useState<boolean>(false);
 
   useEffect(() => {
-    const token = localStorage.getItem("authToken");
+    const token = localStorage.getItem("authtoken");
     if (token) {
       setIsAuthenticated(true);
     } else {

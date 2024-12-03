@@ -18,7 +18,15 @@ function Chat() {
         </div>
         <div id="user-info">
           <p>User 1</p>
-          <img src={SenderIcon} id="user-avatar" alt="User avatar" />
+          <img
+            src={SenderIcon}
+            id="user-avatar"
+            alt="User avatar"
+            onClick={() => {
+              window.location.reload();
+              localStorage.removeItem("authtoken");
+            }}
+          />
         </div>
       </div>
       <div id="main-content">
