@@ -2,6 +2,8 @@ import Logo from "../../assets/logo.png";
 import ContactIcon from "../../assets/contact.png";
 import PrivateChatIcon from "../../assets/private.png";
 import GroupChatIcon from "../../assets/group.png";
+import SenderIcon from "../../assets/sender.png";
+import RecipientIcon from "../../assets/recipient.png";
 import SearchIcon from "../../assets/search.png";
 import SendIcon from "../../assets/send.png";
 import "./style.css";
@@ -15,8 +17,8 @@ function Chat() {
           <h2>QuickChat</h2>
         </div>
         <div id="user-info">
-          <p>User</p>
-          <img src={Logo} id="user-avatar" alt="User avatar" />
+          <p>User 1</p>
+          <img src={SenderIcon} id="user-avatar" alt="User avatar" />
         </div>
       </div>
       <div id="main-content">
@@ -33,22 +35,29 @@ function Chat() {
             </div>
             <div id="user-list">
               <div id="user-list-data">
-                <img src={Logo} id="user-list-data-icon" />
+                <img src={SenderIcon} id="user-list-data-icon" />
                 <p id="user-list-data-name">User 1</p>
               </div>
               <div id="user-list-data">
-                <img src={Logo} id="user-list-data-icon" />
-                <p id="user-list-data-name">User 1</p>
+                <img src={RecipientIcon} id="user-list-data-icon" />
+                <p id="user-list-data-name">User 2</p>
               </div>
             </div>
           </div>
           <div id="chat">
             <div id="chat-user">
-              <img src={Logo} id="chat-user-icon" />
-              <p>User 1</p>
-              <div id="chat-user-status"></div>
+              <img src={RecipientIcon} id="chat-user-icon" />
+              <p>User 2</p>
+              <div id="chat-user-offline" />
             </div>
-            <div id="chat-message">message</div>
+            <div id="chat-message">
+              <div className="message sender">
+                <p>Hello, how are you?</p>
+              </div>
+              <div className="message receiver">
+                <p>I'm doing well, thank you!</p>
+              </div>
+            </div>
             <div id="chat-input">
               <input
                 type="text"
