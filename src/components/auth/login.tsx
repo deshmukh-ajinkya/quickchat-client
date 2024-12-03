@@ -7,11 +7,11 @@ function Login() {
     <div className="login-container">
       <div className="login-box">
         <div className="login-header">
-          <img src={Logo} alt="logo" width={36} />
+          <img id="logo" src={Logo} alt="logo" />
           <h2>QuickChat</h2>
         </div>
         <div className="google-login">
-          <img src={Google} alt="google-signin" width={24} />
+          <img id="login-icon" src={Google} alt="google-signin" />
           <p>Login with Google</p>
         </div>
       </div>
